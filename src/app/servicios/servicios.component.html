@@ -1,0 +1,31 @@
+<div class="container-fluid mb-5 servicios">
+    <div class="row">
+       
+            <div class="col-lg-6 text-center">
+                <h2>DISEÑO WEB</h2>
+                <a href=""><img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></a>
+            </div>
+            <div class="col-lg-6 text-center">
+                <h2>DISEÑO GRAFICO</h2>
+                <a href=""><img src="https://images.pexels.com/photos/285814/pexels-photo-285814.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></a>
+            </div>
+        
+    </div>
+</div>
+            
+<h2 class="text-center">PRUEBA API'S</h2>
+
+<div *ngIf="cervecerias" class="container">
+    <div class="row">
+        <div *ngFor="let cerveza of cervecerias" class="card col-lg-3">
+        
+                <div class="card-body">
+                    <h5 class="card-title">{{ cerveza.name }}</h5>
+                    <p class="card-text">{{ cerveza.country }}</p>
+                    <a class="site" href="{{ cerveza.website_url }}">site</a>
+                </div>
+        </div>
+    </div>
+            
+</div>
+ 

@@ -1,0 +1,39 @@
+<div class="container-fluid mb-5 hero">
+    <div class="row">
+      <div class="col-lg-12">
+        
+        <div class="jumbotron jumbotron-fluid text-center">
+          <div class="container">
+            <h1 class="display-4">DASER DESIGN</h1>
+            <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, ex deserunt eos cum ratione, perspiciatis, asperiores explicabo sit ipsam fuga quasi. Cupiditate neque autem consequuntur nobis doloremque modi facere incidunt?.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="play-container container">
+    <h2 class="text-center">PRUEBA EVENTS</h2>
+    <p>Haz hecho <span (click)="countClick()">CLICK</span> {{ clickCounter }} veces.</p>
+   
+   
+        <ng-template [ngIf]="clickCounter > 1" [ngIfElse]="menor">
+            <p>Contador de clicks<strong> es MAYOR</strong> que 1.</p>
+        </ng-template>
+    
+        <ng-template #menor>
+            <p>Contador de clicks <strong> es MENOR</strong> que 1.</p>
+        </ng-template>
+        <a  class="btn btn-primary text-white" (click)="reset()">Reiniciar</a>
+</div>
+
+<div class="play-container container">
+    <p>
+        <input type="text" [(ngModel)]="name"><br>
+        <strong>Haz escrito: </strong> {{ name }}
+       
+    </p>
+    <a  class="btn btn-primary text-white" (click)="resetText()">Borrar</a>
+</div>
+

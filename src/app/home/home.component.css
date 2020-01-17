@@ -1,0 +1,31 @@
+span {
+    color:lightskyblue;
+    font-weight: bold;
+     padding: .3em .8em;
+    cursor: pointer;
+}
+
+.play-container{
+    padding: 3em;
+    border: 1px solid lightgray;
+    margin-bottom: 1em;
+}
+
+.hero{
+    background-image: url("https://images.pexels.com/photos/316465/pexels-photo-316465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); /* The image used */
+    background-color: white; /* Used if the image is unavailable */
+    height: 700px; /* You must set a specified height */
+    background-position: 50% 50%; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 100%; /* Resize the background image to cover the entire container */
+    
+  }
+
+  @media screen and (max-width: 480px) {
+    .hero {
+     background-image:none;
+    }
+  }
+.jumbotron {
+    background-color: transparent;
+}
