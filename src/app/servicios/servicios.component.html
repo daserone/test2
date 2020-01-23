@@ -15,15 +15,32 @@
             
 <h2 class="text-center">PRUEBA API'S</h2>
 
-<div *ngIf="cervecerias" class="container">
-    <div class="row">
-        <div *ngFor="let cerveza of cervecerias" class="card col-lg-3">
-        
-                <div class="card-body">
-                    <h5 class="card-title">{{ cerveza.name }}</h5>
-                    <p class="card-text">{{ cerveza.country }}</p>
-                    <a class="site" href="{{ cerveza.website_url }}">site</a>
-                </div>
+<div class="container">
+    
+    <div class="row clearfix"  *ngIf="cervecerias" >
+        <div class="col-lg-12">
+            <div class="table-responsive">
+                <table class="table table-hover mb-0 c_table"> 
+                    
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th data-breakpoints="xs">Cerveceria</th>
+                            <th data-breakpoints="xs sm md">Pais</th>
+                            <th data-breakpoints="xs">SITE</th>
+                        </tr>
+                    </thead>
+                    <tbody *ngFor="let cerveza of cervecerias">
+                        <tr>
+                            <td><span><i class=""></i> My Projects</span></td>
+                            <td><span class="">{{ cerveza.name }}</span></td>
+                            <td><span class="">{{ cerveza.country }}</span></td>
+                            <td><span class="s"> <a class="site" href="{{ cerveza.website_url }}">site</a>-</span></td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
             

@@ -13,7 +13,7 @@ export class ServiciosComponent implements OnInit {
 
   ngOnInit() {
     this._http.cervezas().subscribe(data => {
-      this.cervecerias = data
+      this.cervecerias = data;
       console.log(this.cervecerias);
     }
   );
